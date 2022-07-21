@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ezequiel Alejadro Sagardía</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/eins-modal/dist/css/eins-modal.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#briefcase">Portafolio</a></li>
+        <li><a href="#about-me">Sobre Mi</a></li>            
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section>
+  <div class="hero" id="inicio">
+    <div class="container">
+      <img src="img/fondo-desktop.jpg" alt="fondo">
+    </div>
+  </div>
+  <div class="profile">
+    <div class="square"></div>
+    <div class="circle-trans"></div>
+    <div class="circle"></div>
+    <div class="profile-img"><img src="img/fotocv.jpg" alt=""></div>
+    <div class="square-text">EZEQUIEL ALEJANDRO SAGARDIA</div>
+    <div class="square-text-2"><span>FRONT END | BACKEND DEVELOPER</span></div>
+    <div class="contact-icon">
+      <a href="https://github.com/ezesagardia00" target="_blank"><img src="img/github-icon.png" alt=""></a>
+      <a href="https://www.linkedin.com/in/ezesagardia00/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
+      <a data-modal-id="message"><img src="img/message.svg" alt=""></a>
+    </div>
+    <div class="square-text-3"><a href="#about-me"><span>About Me |</span> Sobre Mi</a></div>
+  </div>
+</section>
+
+<!-- BRIEFCASE -->
+
+<section class="briefcase" id="briefcase">
+  <div class="briefcase-section container">
+    <h2><span>Briefcase |</span> Portafolio</h2>
+    <div class="briefcase-grid">
+      <div><a data-modal-id="contenedor1"><img src="img/presupuesto.png" alt=""></a></div>
+      <div><a data-modal-id="contenedor2"><img src="img/listado de personas.png" alt=""></a></div>
+      <div><a data-modal-id="contenedor3"><img src="img/carrito js.png" alt=""></a></div>
+      <div><a data-modal-id="contenedor4"><img src="img/lista de tareas.png" alt=""></a></div>
+      <div><a data-modal-id="contenedor5"><img src="img/calculadora-react.png" alt=""></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="skills">
+  <div class="skill container">
+    <div class="knowledge-part">
+      <h2><span>knowledge |</span>Conocimientos</h2>
+      <div class="knowledge">
+        <div>
+          <img src="img/html-icon.png" alt="">
+          <h3>HTML</h3>
+        </div>
+
+        <div>
+          <img src="img/css-icon.png" alt="">
+          <h3>CSS</h3>
+        </div>
+
+        <div>
+          <img src="img/js-icon.png" alt="">
+          <h3>JAVASCRIPT</h3>
+        </div>
+
+        <div>
+          <img src="img/React-icon.svg" alt="">
+          <h3>REACT</h3>
+        </div>
+
+        <div>
+          <img src="https://iconape.com/wp-content/files/sh/51404/png/c--4.png" alt="">
+          <h3>C#</h3>
+        </div>
+
+        <div>
+          <img src="img/net-icon.svg" alt="">
+          <h3>.NET</h3>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about-me">
+  <div class="about-flex container">
+    <div class="about-info">
+      <p>
+        Mi nombre es Ezequiel, vivo en la Ciudad Autonoma de Buenos Aires, Soy estudiante de la Tecnicatura en Programacion en la UTN. Me capacito en áreas de desarrollo Frontend con React y Backend con C# y .NET
+      </p>
+      <br>
+      <p>
+        Soy una persona en continua formación académica y profesional. Me defino como una persona responsable, organizada y dispuesta a trabajar en equipo. 
+      </p>
+      <br>
+      <p>
+        Quiero formar parte de una empresa que en la que pueda desarrollarme, crecer y seguir aprendiendo.
+      </p>
+    </div>
+
+    <div class="social">
+      <a href="https://github.com/ezesagardia00" target="_blank"><img src="img/github-icon.png" alt=""></a>
+      <a href="https://www.linkedin.com/in/ezesagardia00/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
+      <a data-modal-id="message"><img src="img/message.svg" alt=""></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container"></div>
+  <p>Diseñado por Ezequiel Sagardía</p>
+</footer>
+
+<!-- Modal section -->
+
+<div id="myModal" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+  <div class="eins-modal-content">
+    <div class="eins-modal-close"></div>
+
+    Ejemplo de Prueba
+
+    <button class="eins-modal-close-button">OK</button>
+  </div>
+</div>
+
+<!-- Modal Section -->
+
+<div id="contenedor1" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+  <div class="eins-modal-content">
+    <div class="eins-modal-close"></div>
+    <div class="pw-content">
+      <div class="eins-modal-preview">
+        <img src="img/presupuesto.png" alt="">
+      </div>
+      <div class="eins-modal-text">
+        <p>Aplicacion de Presupuesto con Javascript para proyecto final de Coder House</p>
+        <p>Proyecto que hice aplicando todo lo que he visto en las clases, como el manejo del DOM y la Programacion Orientada a Objetos
+        </p>
+        <div class="eins-modal-text-2">
+          <span>Enlace:</span><a href="https://presupuesto-con-js.netlify.app/" target="_blank">https://presupuesto-con-js.netlify.app/</a>
+        </div>
+        <div class="eins-modal-text-3">
+          <span>Tecnologias Usadas:</span>
+          <div class="eins-modal-tec">
+            <img src="/img/html-icon.png" alt="">
+            <img src="/img/css-icon.png" alt="">
+            <img src="/img/js-icon.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contenedor2" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+  <div class="eins-modal-content">
+    <div class="eins-modal-close"></div>
+    <div class="pw-content">
+      <div class="eins-modal-preview">
+        <img src="img/listado de personas.png" alt="">
+      </div>
+      <div class="eins-modal-text">
+        <p>Aplicacion de Listado de Personas con Javascript utilizando Programacion Orientada a Objetos y el manejo del DOM</p>
+        <div class="eins-modal-text-2">
+          <span>Enlace:</span><a href="https://listado-de-personas-js.netlify.app/" target="_blank">https://listado-de-personas-js.netlify.app/</a>
+        </div>
+        <div class="eins-modal-text-3">
+          <span>Tecnologias Usadas:</span>
+          <div class="eins-modal-tec">
+            <img src="/img/html-icon.png" alt="">
+            <img src="/img/css-icon.png" alt="">
+            <img src="/img/js-icon.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contenedor3" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+  <div class="eins-modal-content">
+    <div class="eins-modal-close"></div>
+    <div class="pw-content">
+      <div class="eins-modal-preview">
+        <img src="img/carrito js.png" alt="">
+      </div>
+      <div class="eins-modal-text">
+        <p>Carrito de Compras hecho usando Javascript y aplicando la funcion de agregar uno o mas productos al carrito para luego comprar el o los productos solicitados</p>
+        <div class="eins-modal-text-2">
+          <span>Enlace:</span><a href="https://mangastore-js.netlify.app/" target="_blank">https://mangastore-js.netlify.app/</a>
+        </div>
+        <div class="eins-modal-text-3">
+          <span>Tecnologias Usadas:</span>
+          <div class="eins-modal-tec">
+            <img src="/img/html-icon.png" alt="">
+            <img src="/img/css-icon.png" alt="">
+            <img src="/img/js-icon.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contenedor4" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+  <div class="eins-modal-content">
+    <div class="eins-modal-close"></div>
+    <div class="pw-content">
+      <div class="eins-modal-preview">
+        <img src="img/lista de tareas.png" alt="">
+      </div>
+      <div class="eins-modal-text">
+        <p>Aplicacion de Lista de Tareas con React utilizando el Hook Use State y los props</p>
+        <div class="eins-modal-text-2">
+          <span>Enlace:</span><a href="https://github.com/ezesagardia00/proyecto-tareas-react" target="_blank">https://github.com/ezesagardia00/proyecto-tareas-react</a>
+        </div>
+        <div class="eins-modal-text-3">
+          <span>Tecnologias Usadas:</span>
+          <div class="eins-modal-tec">
+            <img src="/img/html-icon.png" alt="">
+            <img src="/img/css-icon.png" alt="">
+            <img src="/img/js-icon.png" alt="">
+            <img src="/img/React-icon.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contenedor5" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+  <div class="eins-modal-content">
+    <div class="eins-modal-close"></div>
+    <div class="pw-content">
+      <div class="eins-modal-preview">
+        <img src="img/calculadora-react.png" alt="">
+      </div>
+      <div class="eins-modal-text">
+        <p>Calculadora hecha como primer proyecto en React utilizando por primera vez el Hook Use State y props</p>
+        <div class="eins-modal-text-2">
+          <span>Enlace:</span><a href="https://github.com/ezesagardia00/calculadora-react" target="_blank">https://github.com/ezesagardia00/calculadora-react</a>
+        </div>
+        <div class="eins-modal-text-3">
+          <span>Tecnologias Usadas:</span>
+          <div class="eins-modal-tec">
+            <img src="/img/html-icon.png" alt="">
+            <img src="/img/css-icon.png" alt="">
+            <img src="/img/js-icon.png" alt="">
+            <img src="/img/React-icon.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="message" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+  <div class="eins-modal-content">
+    <div class="eins-modal-close"></div>
+
+    <form class="form" action="https://formspree.io/f/xqknnovg" method="POST">
+    <label>Tu Correo Electronico:
+    <input type="email" name="email">
+    </label>
+
+    <label>Tu Mensaje:
+      <textarea name="message"></textarea>
+    </label>
+    <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+<script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
+    
+</body>
+</html>
